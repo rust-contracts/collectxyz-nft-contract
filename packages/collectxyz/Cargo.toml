@@ -1,0 +1,20 @@
+[package]
+name = "collectxyz"
+version = "0.2.2"
+authors = ["0xja <0xja@protonmail.com>"]
+edition = "2018"
+description = "Common data types and helpers for interacting with xyz smart contracts"
+license = "Apache-2.0"
+repository = "https://github.com/collectxyz/collectxyz-nft-contract"
+
+[features]
+# for more explicit tests, cargo test --features=backtraces
+backtraces = ["cosmwasm-std/backtraces"]
+
+[dependencies]
+base64 = "0.13.0"
+schemars = "0.8.3"
+serde = { version = "1.0.127", default-features = false, features = ["derive"] }
+cosmwasm-std = { version = "0.16.0" }
+cw721 = { version = "=0.9.1" }
+cw721-base = { version = "=0.9.1", features = ["library"] }
