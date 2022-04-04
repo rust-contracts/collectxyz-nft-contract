@@ -1,0 +1,1 @@
+# collectxyz-nft-contract
